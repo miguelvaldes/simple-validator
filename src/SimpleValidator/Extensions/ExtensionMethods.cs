@@ -193,7 +193,7 @@ namespace SimpleValidator.Extensions
         /// <returns></returns>
         public static bool IsRegex(this string value, string exp)
         {
-            if (value.IsNotNullOrEmpty())
+            if (value.IsNullOrEmpty())
             {
                 return false;
             }
